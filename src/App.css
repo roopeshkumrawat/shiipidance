@@ -1,38 +1,24 @@
-.App {
-  text-align: center;
+:root {
+  --primaryBtnBgColor: #DB4C38;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Ramaraja&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 1440px !important;
+  margin: auto;
+  padding: 0px !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#navbarSupportedContent .navbar-nav .nav-link {
+  color: var(--black, #242424);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26.6px;
+  letter-spacing: 1px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#navbarSupportedContent .navbar-nav .nav-link.active {
+  color: var(--primaryBtnBgColor);
 }

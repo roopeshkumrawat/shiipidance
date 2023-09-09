@@ -1,0 +1,117 @@
+.topBar {
+    background-color: var(--primaryBtnBgColor);
+    height: 50px;
+    padding: 12.22px 0;
+}
+
+.callMail {
+    display: flex;
+    gap: 30px;
+}
+
+.callMail a {
+    color: var(--white, #FFF);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.callMail>img {
+    width: 24px;
+    height: 24px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 13px;
+}
+
+.socialIcons a {
+    display: flex;
+    align-self: center;
+}
+
+.callMail .socialIconsImg {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-self: center;
+}
+
+@media (max-width: 650px) {
+    .topBar {
+        height: min-content;
+    }
+
+    .callMail {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .callMail a {
+        font-size: 14px;
+        font-weight: 400;
+        gap: 2px;
+    }
+
+    .callMail>a>img {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .socialIcons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: self-start;
+        gap: 8px;
+    }
+
+    .socialIconsImg {
+        max-height: 18px;
+        max-width: 18px;
+    }
+}
+
+@media (max-width: 310px) {
+    .socialIcons {
+        justify-content: flex-start;
+    }
+}
+
+/* Top bar css end  */
+/* nav menus css start */
+
+.logo {
+    width: 207.552px;
+    height: 63px;
+    flex-shrink: 0;
+}
+
+.navbarSupportedContent {
+    max-width: 962px;
+}
+
+.navbarNav {
+    max-width: 621px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        max-width: 150px;
+        object-fit: contain;
+        height: auto;
+    }
+}
